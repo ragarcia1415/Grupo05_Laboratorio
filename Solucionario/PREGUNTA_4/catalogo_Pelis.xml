@@ -1,0 +1,35 @@
+<CATALOG>
+<PELI>
+<TITULO>Terminator 1</TITULO>
+<ACTOR>Arnold Schwarzenegger</ACTOR>
+<PAIS>USA</PAIS>
+<COMPANY>Columbia</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1985</YEAR>
+</PELI>
+<PELI>
+<TITULO>Los nuevos mutantes</TITULO>
+<ACTOR>Frederic Thomas</ACTOR>
+<PAIS>USA</PAIS>
+<COMPANY>Columbia</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1985</YEAR>
+</PELI>
+<PELI>
+<TITULO>Escape de Seul</TITULO>
+<ACTOR>Shing Min Ho</ACTOR>
+<PAIS>USA</PAIS>
+<COMPANY>Columbia</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1985</YEAR>
+</PELI>
+<PELI>
+<TITULO>Mi primer amor</TITULO>
+<ACTOR>Alina Greys</ACTOR>
+<PAIS>USA</PAIS>
+<COMPANY>Columbia</COMPANY>
+<PRICE>10.90</PRICE>
+<YEAR>1985</YEAR>
+</PELI>
+
+</CATALOG>
