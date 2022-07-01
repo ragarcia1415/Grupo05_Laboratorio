@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ejercicio 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <style type="text/css">
+      body{
+        margin: 100px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1 class="text-center">Ejercicio 3</h1>
+    <div class="dropdown text-center">
+      <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+        Marcas de Empleza
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+        <li><button class="dropdown-item" type="button" onclick="myFunction(this)">Coca Cola</button></li>
+        <li><button class="dropdown-item" type="button" onclick="myFunction(this)">Sony</button></li>
+        <li><button class="dropdown-item" type="button" onclick="myFunction(this)">Meta</button></li>
+        <li><button class="dropdown-item" type="button" onclick="myFunction(this)">Amazon</button></li>
+      </ul>
+    </div>
+
+    <table class="table table-striped" style="margin-top: 100px;">
+      <thead>
+        <tr class="table-success">
+          <th scope="col">Nombre</th>
+          <th scope="col">Fundación</th>
+          <th scope="col">Descripción</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td id="dato1"></td>
+          <td id="dato2"></td>
+          <td id="dato3"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function myFunction(boton) {
+        const texto = boton.innerHTML;
+        var obj;
+        if(texto == "Coca Cola") 
+          obj = JSON.parse('{"nombre":"Coca Cola", "fundacion":"  8 de mayo de 1886", "descripcion":"es una corporación multinacional estadounidense de bebidas con sede en Atlanta, Georgia" }');
+
+        else if (texto == "Sony") 
+          obj = JSON.parse('{"nombre":"Sony", "fundacion":" 7 de mayo de 1946", "descripcion":"fabricante más importantes a nivel mundial en electrónica de consumo: audio y vídeo, computación, fotografía" }');
+
+        else if (texto == "Meta") 
+          obj = JSON.parse('{"nombre":"Meta", "fundacion":" 4 de febrero de 2004", "descripcion":"es un conglomerado estadounidense de tecnología y redes sociales con sede en Menlo Park, California." }');
+        else
+          obj = JSON.parse('{"nombre":"Amazon", "fundacion":"5 de julio de 1994", "descripcion": "es una compañía estadounidense de comercio electrónico y servicios de computación en la nube a todos los niveles con sede en la ciudad de Seattle, Washington. " }');
+
+        document.getElementById("dato1").innerHTML = obj.nombre;
+        document.getElementById("dato2").innerHTML = obj.fundacion;
+        document.getElementById("dato3").innerHTML = obj.descripcion;
+      }
+    </script>
+
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
